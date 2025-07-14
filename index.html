@@ -1,80 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <title>Extensions manager</title>
+  </head>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Browser extensions manager UI</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
 <body>
+  <div class="header">
+    <img class="logo" alt="extensions-logo" src="./assets/images/logo.svg">
+    <button class="switch-appTheme">
 
-  Extensions List
+    </button>
+    <img class="light-theme icon" alt="App light" src="./assets/images/icon-sun.svg">
+    <img class="dark-theme icon" alt="App dark" src="./assets/images/icon-moon.svg">
+</div>
 
-  All
-  Active
-  Inactive
 
-  <!-- If you plan to use the JSON file to populate the data dynamically, you can delete the content below -->
+  <main>
+    <div class="extensions-list-menu">
+      <div class="text">Extensions List</div>
+      <button class="All">All</button>
+      <button class="Active">Active</button>
+      <button class="Inactive">Inactive</button>
+    </div>
 
-  DevLens
-  Quickly inspect page layouts and visualize element boundaries.
-  Remove
 
-  StyleSpy
-  Instantly analyze and copy CSS from any webpage element.
-  Remove
 
-  SpeedBoost
-  Optimizes browser resource usage to accelerate page loading.
-  Remove
+    <div class="extensions-list-content">
+      <div class="DevLens">
+        <img class="logo" alt="devlens_logo" src="./assets/images/logo-devlens.svg">
+        <div class="name">DevLens</div>
+        <div class="description">Quickly inspect page layouts and visualize element boundaries.</div>
+        <button class="remove">Remove</button>
+      </div>
 
-  JSONWizard
-  Formats, validates, and prettifies JSON responses in-browser.
-  Remove
 
-  TabMaster Pro
-  Organizes browser tabs into groups and sessions.
-  Remove
+      <div class="StyleSpy">
+        <img class="logo" alt="stylespy_logo" src="./assets/images/logo-style-spy.svg">
+        <div class="name">StyleSpy</div>
+        <div class="description">Instantly analyze and copy CSS from any webpage element.</div>
+        <button class="remove">Remove</button>
+      </div>
 
-  ViewportBuddy
-  Simulates various screen resolutions directly within the browser.
-  Remove
 
-  Markup Notes
-  Enables annotation and notes directly onto webpages for collaborative debugging.
-  Remove
+      <div class="SpeedBoost">
+        <img class="logo" alt="speedboost_logo" src="./assets/images/logo-speed-boost.svg">
+        <div class="name">SpeedBoost</div>
+        <div class="description">Optimizes browser resource usage to accelerate page loading.</div>
+        <button class="remove">Remove</button>
+      </div>
 
-  GridGuides
-  Overlay customizable grids and alignment guides on any webpage.
-  Remove
 
-  Palette Picker
-  Instantly extracts color palettes from any webpage.
-  Remove
+      <div class="JSONWizard">
+        <img class="logo" alt="jsonwizard_logo" src="./assets/images/logo-json-wizard.svg">
+        <div class="name">JSONWizard</div>
+        <div class="description">Formats, validates, and prettifies JSON responses in-browser.</div>
+        <button class="remove">Remove</button>
+      </div>
 
-  LinkChecker
-  Scans and highlights broken links on any page.
-  Remove
 
-  DOM Snapshot
-  Capture and export DOM structures quickly.
-  Remove
+      <div class="TabMaster Pro">
+        <img class="logo" alt="tabmasterpro_logo" src="./assets/images/logo-tab-master-pro.svg">
+        <div class="name">TabMaster Pro</div>
+        <div class="description">Organizes browser tabs into groups and sessions.</div>
+        <button class="remove">Remove</button>
+      </div>
 
-  ConsolePlus
-  Enhanced developer console with advanced filtering and logging.
-  Remove
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <div class="ViewportBuddy">
+        <img class="logo" alt="viewportbuddy_logo" src="./assets/images/logo-viewport-buddy.svg">
+        <div class="name">ViewportBuddy</div>
+        <div class="description">Simulates various screen resolutions directly within the browser.</div>
+        <button class="remove">Remove</button>
+      </div>
+
+
+      <div class="Markup Notes">
+        <img class="logo" alt="markupnotes_logo" src="./assets/images/logo-markup-notes.svg">
+        <div class="name">TabMaster Pro</div>
+        <div class="description">Enables annotation and notes directly onto webpages for collaborative debugging.</div>
+        <button class="remove">Remove</button>
+      </div>
+
+
+      <div class="Grid Guides">
+        <img class="logo" alt="gridguides_logo" src="./assets/images/logo-grid-guides.svg">
+        <div class="name">Grid Guides</div>
+        <div class="description">Overlay customizable grids and alignment guides on any webpage.</div>
+        <button class="remove">Remove</button>
+      </div>
+
+
+      <div class="Palette Picker">
+        <img class="logo" alt="palettepicker_logo" src="./assets/images/logo-palette-picker.svg">
+        <div class="name">Palette Picker</div>
+        <div class="description">Instantly extracts color palettes from any webpage.</div>
+        <button class="remove">Remove</button>
+      </div>
+
+
+      <div class="LinkChecker">
+        <img class="logo" alt="linkchecker_logo" src="./assets/images/logo-link-checker.svg">
+        <div class="name">LinkChecker</div>
+        <div class="description">Scans and highlights broken links on any page.</div>
+        <button class="remove">Remove</button>
+      </div>
+
+
+      <div class="DOM Snapshot">
+        <img class="logo" alt="domsnapshot_logo" src="./assets/images/logo-dom-snapshot.svg">
+        <div class="name">DOM Snapshot</div>
+        <div class="description">Capture and export DOM structures quickly.</div>
+        <button class="remove">Remove</button>
+      </div>
+
+
+      <div class="Console Plus">
+        <img class="logo" alt="consoleplus_logo" src="./assets/images/logo-console-plus.svg">
+        <div class="name">Console Plus</div>
+        <div class="description">Enhanced developer console with advanced filtering and logging.</div>
+        <button class="remove">Remove</button>
+      </div>
+
+
+    </div>
+  </main>
 </body>
 </html>
