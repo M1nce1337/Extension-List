@@ -4,73 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
     <title>Extensions manager</title>
   </head>
 
 
 <body>
-  <div class="header">
-    <img class="logo" alt="extensions-logo" src="./assets/images/logo.svg">
-    <button class="switch-appTheme">
-
+  <header>
+    <img class="logo" alt="Extensions Logo" src="./assets/images/logo.svg">
+    <button class="switch-theme">
+      <img class="light-theme icon" alt="App light" src="./assets/images/icon-sun.svg">
+      <img class="dark-theme icon" alt="App dark" src="./assets/images/icon-moon.svg">
     </button>
-    <img class="light-theme icon" alt="App light" src="./assets/images/icon-sun.svg">
-    <img class="dark-theme icon" alt="App dark" src="./assets/images/icon-moon.svg">
-</div>
+  </header>
 
 
   <main>
-    <div class="extensions-list-menu">
-      <div class="text">Extensions List</div>
-      <button class="All">All</button>
-      <button class="Active">Active</button>
-      <button class="Inactive">Inactive</button>
+    <div class="extensions-list">
+      <h2>Extensions List</h2>
+      <button class="filter-extensions">All</button>
+      <button class="filter-extensions">Active</button>
+      <button class="filter-extensions">Inactive</button>
     </div>
-
 
 
     <div class="extensions-list-content">
       <div class="DevLens">
-        <img class="logo" alt="devlens_logo" src="./assets/images/logo-devlens.svg">
+        <img class="logo" alt="DevLens Logo" src="./assets/images/logo-devlens.svg">
         <div class="name">DevLens</div>
         <div class="description">Quickly inspect page layouts and visualize element boundaries.</div>
         <button class="remove">Remove</button>
       </div>
 
 
-      <div class="StyleSpy">
-        <img class="logo" alt="stylespy_logo" src="./assets/images/logo-style-spy.svg">
+      <div class="style-spy">
+        <img class="logo" alt="StyleSpyLogo" src="./assets/images/logo-style-spy.svg">
         <div class="name">StyleSpy</div>
         <div class="description">Instantly analyze and copy CSS from any webpage element.</div>
         <button class="remove">Remove</button>
       </div>
 
 
-      <div class="SpeedBoost">
-        <img class="logo" alt="speedboost_logo" src="./assets/images/logo-speed-boost.svg">
+      <div class="speed-boost">
+        <img class="logo" alt="SpeedBoost Logo" src="./assets/images/logo-speed-boost.svg">
         <div class="name">SpeedBoost</div>
         <div class="description">Optimizes browser resource usage to accelerate page loading.</div>
         <button class="remove">Remove</button>
       </div>
 
 
-      <div class="JSONWizard">
-        <img class="logo" alt="jsonwizard_logo" src="./assets/images/logo-json-wizard.svg">
+      <div class="json-wizard">
+        <img class="logo" alt="JSON Wizard Logo" src="./assets/images/logo-json-wizard.svg">
         <div class="name">JSONWizard</div>
         <div class="description">Formats, validates, and prettifies JSON responses in-browser.</div>
         <button class="remove">Remove</button>
       </div>
 
 
-      <div class="TabMaster Pro">
-        <img class="logo" alt="tabmasterpro_logo" src="./assets/images/logo-tab-master-pro.svg">
+      <div class="tab-master-pro">
+        <img class="logo" alt="TabMaster Pro Logo" src="./assets/images/logo-tab-master-pro.svg">
         <div class="name">TabMaster Pro</div>
         <div class="description">Organizes browser tabs into groups and sessions.</div>
         <button class="remove">Remove</button>
       </div>
 
 
-      <div class="ViewportBuddy">
+      <div class="viewport-buddy">
         <img class="logo" alt="viewportbuddy_logo" src="./assets/images/logo-viewport-buddy.svg">
         <div class="name">ViewportBuddy</div>
         <div class="description">Simulates various screen resolutions directly within the browser.</div>
@@ -78,15 +77,15 @@
       </div>
 
 
-      <div class="Markup Notes">
+      <div class="markup-notes">
         <img class="logo" alt="markupnotes_logo" src="./assets/images/logo-markup-notes.svg">
-        <div class="name">TabMaster Pro</div>
+        <div class="name">Markup Notes</div>
         <div class="description">Enables annotation and notes directly onto webpages for collaborative debugging.</div>
         <button class="remove">Remove</button>
       </div>
 
 
-      <div class="Grid Guides">
+      <div class="grid-guides">
         <img class="logo" alt="gridguides_logo" src="./assets/images/logo-grid-guides.svg">
         <div class="name">Grid Guides</div>
         <div class="description">Overlay customizable grids and alignment guides on any webpage.</div>
@@ -94,7 +93,7 @@
       </div>
 
 
-      <div class="Palette Picker">
+      <div class="palette-picker">
         <img class="logo" alt="palettepicker_logo" src="./assets/images/logo-palette-picker.svg">
         <div class="name">Palette Picker</div>
         <div class="description">Instantly extracts color palettes from any webpage.</div>
@@ -102,7 +101,7 @@
       </div>
 
 
-      <div class="LinkChecker">
+      <div class="link-checker">
         <img class="logo" alt="linkchecker_logo" src="./assets/images/logo-link-checker.svg">
         <div class="name">LinkChecker</div>
         <div class="description">Scans and highlights broken links on any page.</div>
@@ -110,7 +109,7 @@
       </div>
 
 
-      <div class="DOM Snapshot">
+      <div class="dom-snapshot">
         <img class="logo" alt="domsnapshot_logo" src="./assets/images/logo-dom-snapshot.svg">
         <div class="name">DOM Snapshot</div>
         <div class="description">Capture and export DOM structures quickly.</div>
@@ -118,14 +117,12 @@
       </div>
 
 
-      <div class="Console Plus">
+      <div class="console-plus">
         <img class="logo" alt="consoleplus_logo" src="./assets/images/logo-console-plus.svg">
         <div class="name">Console Plus</div>
         <div class="description">Enhanced developer console with advanced filtering and logging.</div>
         <button class="remove">Remove</button>
       </div>
-
-
     </div>
   </main>
 </body>
